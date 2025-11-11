@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Delights - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <!-- Internal CSS for Home Page -->
+    <style>
+        .featured-flowers {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .flower-card {
+            width: 30%;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .flower-img {
+            height: 200px;
+            background-color: #f8bbd0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e91e63;
+            font-size: 3rem;
+        }
+        
+        .flower-info {
+            padding: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .flower-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <!-- Inline styling for the logo -->
+                    <i class="fas fa-seedling" style="font-size: 2.2rem;"></i>
+                    <h1>Blooming Delights</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="hero">
+            <h2>Beautiful Flowers for Every Occasion</h2>
+            <p>We create stunning floral arrangements that bring joy and beauty to your special moments. From weddings to birthdays, we have the perfect flowers for you.</p>
+            <a href="services.html" class="btn">Explore Our Services</a>
+        </section>
+        
+        <section class="content-section">
+            <h2>Welcome to Our Florist Shop</h2>
+            <p>At Blooming Delights, we believe that flowers have the power to transform any space and brighten any day. Our skilled florists carefully select and arrange the freshest blooms to create breathtaking bouquets and arrangements.</p>
+            <p>Whether you're celebrating a special occasion or simply want to add some beauty to your home or office, we have the perfect floral solution for you.</p>
+            
+            <div class="login-form">
+                <h3>Customer Login</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Login</button>
+                </form>
+            </div>
+            
+            <div class="team-btn">
+                <a href="team.html" class="btn">Meet Our Team</a>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>Featured Flowers</h2>
+            <div class="featured-flowers">
+                <div class="flower-card" >
+                    <div class="flower-img" style="background-color: #fff;">
+                        <img src="./assets/roses.webp" alt=""  height="200px">
+                    </div>
+                    <div class="flower-info">
+                        <h3>Elegant Roses</h3>
+                        <p>Beautiful roses in various colors perfect for any romantic occasion.</p>
+                    </div>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="flower-img">
+                        <img src="./assets/spring-tulips.jpg" alt="" height="200px" width="330px">
+                    </div>
+                    <div class="flower-info">
+                        <h3>Spring Tulips</h3>
+                        <p>Bright and cheerful tulips to welcome the spring season.</p>
+                    </div>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="flower-img" style="background-color: #fff;">
+                        <img src="./assets/sun-flower.webp" width="" height="200px" alt="">
+                    </div>
+                    <div class="flower-info">
+                        <h3>Sunny Sunflowers</h3>
+                        <p>Large, vibrant sunflowers that bring sunshine to any room.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Blooming Delights. All rights reserved.</p>
+                    <p>Designed by Florist Website Team</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
